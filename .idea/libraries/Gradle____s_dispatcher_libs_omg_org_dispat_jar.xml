@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./s_dispatcher/libs/omg.org.dispat.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/s_dispatcher/libs/omg.org.dispat.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white">
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:text="解绑模组" />
+    <ImageView
+        android:id="@+id/img_carmoudle"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/img_un_bind"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/img_carmoudle"
+        android:layout_marginTop="27dp">
+        <TextView
+            android:id="@+id/txt_koow_product"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/normal_txt_color_black"
+            android:text="解绑成功"
+            android:layout_below="@+id/img_carmoudle"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="14dp"
+        android:textColor="@color/normal_txt_color_gray"
+        android:text="您的控车通信模组已经解绑，请截屏保存或者复制记住您"
+        android:layout_below="@+id/img_carmoudle"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="14dp"
+            android:textColor="@color/normal_txt_color_gray"
+            android:text="的模组号，以便以后再次绑定时使用。"
+            android:layout_below="@+id/img_carmoudle"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+        <TextView
+            android:id="@+id/moudle_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textColor="@color/normal_txt_color_black"
+            android:text="模组号为"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_below="@+id/img_carmoudle"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText,ContentDescription"
+    android:background="@drawable/control_car_bg">
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:background="@color/car_control_title_color"
+        androidme:leftres="@drawable/personal_center" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_findcar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/btn_pager"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="48dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:visibility="visible" />-->
+    <ImageView
+    android:id="@+id/img_findcar"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="48dp"
+    android:adjustViewBounds="true"
+    android:visibility="invisible"
+    android:layout_marginBottom="145dp"/>
+    <ImageView
+        android:id="@+id/zhanwei"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true" />
+    <com.mani.car.mekongk1.ui.controlcar.ViewCarBody
+        android:id="@+id/img_carbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/zhanwei"
+        android:layout_marginTop="48dp"/>
+
+    <com.mani.car.mekongk1.ui.controlcar.ScrollLayout
+        android:id="@+id/gesture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head"
+        />
+    <com.mani.car.mekongk1.ui.controlcar.ViewSideState
+        android:id="@+id/side_state"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" />
+
+
+    <com.mani.car.mekongk1.ui.controlcar.ControlButtonSingleZhu
+        android:id="@+id/control_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:id="@+id/img_click_agree"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_5"
+        android:src="@drawable/gesture_up"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/control_button"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:layout_centerHorizontal="true"
+        />
+    <!--<mekongk11.ui.controlcar.ControlButtonViewpager-->
+        <!--android:id="@+id/btn_pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="145dp"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/dot_horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="123dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal" />-->
+    <!--<mekongk11.ui.controlcar.FlashTextView-->
+        <!--android:id="@+id/flash_txt"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="点击车辆激活功能栏"-->
+        <!--android:textSize="@dimen/dp_16"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginBottom="47dp"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+    <ImageView
+        android:id="@+id/img_guide_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="用户指引，单击关闭"
+        android:src="@drawable/control_guide_four"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/img_guide_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="用户指引，单击关闭"
+        android:src="@drawable/control_guide_three"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/img_guide_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="用户指引，单击关闭"
+        android:src="@drawable/control_guide_two"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+    <ImageView
+        android:id="@+id/img_guide_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="用户指引，单击关闭"
+        android:src="@drawable/control_guide_one"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+</RelativeLayout>

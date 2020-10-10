@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:dslv="http://schemas.android.com/com.mobeta.android.dslv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white"
+    android:orientation="vertical">
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:text="板块管理" />
+
+    <com.mobeta.android.dslv.DragSortListView
+        android:id="@+id/dslvList"
+        dslv:click_remove_id="@id/click_remove"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.1"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1.0"
+        android:dividerHeight="1px"
+        android:divider="@color/normal_bg_color_big_white"
+        />
+
+</LinearLayout>

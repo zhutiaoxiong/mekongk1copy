@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.85"
+        android:src="#000000"
+        android:tooltipText="背景"/>
+    <com.mani.car.mekongk1.ui.controlcar.ScrollLayout
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_top1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginTop="23dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="下滑或者点击空白处可以退出"-->
+        <!--android:textColor="@color/normal_txt_color_white"-->
+        <!--android:textSize="14dp"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/txt_top2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginTop="53dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="长按可以拖动排序"-->
+        <!--android:textColor="@color/normal_txt_color_white"-->
+        <!--android:textSize="14dp"/>-->
+    <ImageView
+        android:id="@+id/img_drop_down"
+        android:layout_width="@dimen/dp_12"
+        android:layout_height="@dimen/dp_5"
+        android:layout_marginTop="66dp"
+        android:src="@drawable/gesture_down"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+    <!--<TextView-->
+        <!--android:id="@+id/txt_top3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginTop="83dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="长按可拖动排序"-->
+        <!--android:textColor="@color/normal_txt_color_white"-->
+        <!--android:textSize="16sp"/>-->
+
+    <com.kulala.staticsview.dragGrid.DragGridViewZhuAllCanMove
+        android:id="@+id/grid_sort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_drop_down"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="84dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="32dp"
+        android:verticalSpacing="15dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"/>
+
+</RelativeLayout>

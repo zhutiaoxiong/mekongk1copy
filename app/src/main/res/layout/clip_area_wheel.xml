@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.mani.car.mekongk1.ui.controlcar.area.WheelNumView
+        android:id="@+id/wheel_num"
+        android:layout_width="47dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txt_left"
+        android:layout_toLeftOf="@+id/wheel_num"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="车辆超出直径  "
+        android:textColor="#858585"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_right"
+        android:layout_toRightOf="@+id/wheel_num"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="  km 会提醒您"
+        android:textColor="#858585"
+        android:textSize="14dp"/>
+
+    <ImageView
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:src="#858585"/>
+    <ImageView
+        android:layout_marginTop="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:src="#858585"/>
+
+</RelativeLayout>

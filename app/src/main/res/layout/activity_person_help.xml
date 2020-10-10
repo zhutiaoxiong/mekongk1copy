@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white"
+    android:orientation="vertical">
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="求助反馈"
+        androidme:leftres="@drawable/selector_back_press"
+        />
+    <com.kulala.staticsview.style.LeftText
+        android:id="@+id/sugest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="问题建议"
+        androidme:splitLine="true"
+        android:layout_marginTop="@dimen/dp_24"
+        />
+    <com.kulala.staticsview.style.LeftText
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="售后服务"
+        />
+</LinearLayout>

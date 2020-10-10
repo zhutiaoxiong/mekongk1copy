@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="277dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="182dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bgst_white_round17"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:background="@drawable/bgst_black_round17_side_l"
+            android:gravity="center"
+            android:text="开车"
+            android:textColor="@color/normal_txt_color_black"
+            android:textSize="16dp"/>
+        <Button
+            android:id="@+id/btn_center"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:background="@drawable/bgst_white_round17"
+            android:gravity="center"
+            android:text="步行"
+            android:textColor="@color/normal_txt_color_black"
+            android:textSize="16dp"/>
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:background="@drawable/bgst_black_round17_side_r"
+            android:gravity="center"
+            android:text="骑行"
+            android:textColor="@color/normal_txt_color_black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

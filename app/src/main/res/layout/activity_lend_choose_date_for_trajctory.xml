@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white">
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="选择日期"
+        androidme:leftres="@drawable/selector_back_press"
+        />
+    <!--<TextView-->
+        <!--android:id="@+id/txt_datefromto"-->
+        <!--android:layout_below="@id/title_head"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="#000000"-->
+        <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:background="#ffffff"-->
+        <!--android:gravity="left|center_vertical"-->
+        <!--android:text="日期截止"/>-->
+    <com.kulala.staticsview.calendar.CalendarView
+        android:id="@+id/calendar"
+        android:layout_marginTop="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"/>
+
+
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/button_selector_rect"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="确定"/>
+</RelativeLayout>

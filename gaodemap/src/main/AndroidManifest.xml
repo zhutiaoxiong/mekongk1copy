@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kulala.gaodemap" >
+<application
+>
+<meta-data
+    android:name="com.amap.api.v2.apikey"
+    android:value="6e4e85ec585c426423fd15f0f16c5ef8"/>
+    <service android:name="com.amap.api.location.APSService"/>
+<!--<activity-->
+    <!--android:name="com.kulala.lib.gaode.ActivityNaviAmap"-->
+    <!--android:label="Amap"-->
+    <!--android:screenOrientation="portrait"-->
+    <!--android:windowSoftInputMode="stateAlwaysHidden">-->
+<!--</activity>-->
+<!--<activity-->
+<!--android:name="com.kulala.lib.gaode.ViewHudAmap"-->
+<!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+<!--android:label="@string/app_name"-->
+
+<!--android:screenOrientation="portrait"-->
+<!--android:windowSoftInputMode="stateAlwaysHidden">-->
+<!--</activity>-->
+</application>
+</manifest>

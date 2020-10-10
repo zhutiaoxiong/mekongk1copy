@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_txt_color_white"
+    android:orientation="vertical">
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="公众号"
+        androidme:leftres="@drawable/selector_back_press"
+        />
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="114dp"
+        android:src="@drawable/person_public_number"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="扫码关注么控K1公众号"
+        android:textColor="@color/normal_title_color"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"
+        />
+</LinearLayout>

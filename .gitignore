@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/s_dispatcher/build/
+/s_dispatcher/build/intermediates/javac/debug/classes/
+/s_staticsfunc/build/
+/s_staticsfunc/build/intermediates/javac/debug/classes/
+/s_staticsview/build/
+/s_staticsview/build/intermediates/javac/debug/classes/
+/s_timepicker/build/
+/s_timepicker/build/intermediates/javac/debug/classes/

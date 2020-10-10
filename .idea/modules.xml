@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="mekongk1/app" />
+      <module fileurl="file://$PROJECT_DIR$/gaodemap/gaodemap.iml" filepath="$PROJECT_DIR$/gaodemap/gaodemap.iml" group="mekongk1/gaodemap" />
+      <module fileurl="file://$PROJECT_DIR$/links/links.iml" filepath="$PROJECT_DIR$/links/links.iml" group="mekongk1/links" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mekongk1.iml" filepath="$PROJECT_DIR$/.idea/modules/mekongk1.iml" group="mekongk1" />
+      <module fileurl="file://$PROJECT_DIR$/s_dispatcher/s_dispatcher.iml" filepath="$PROJECT_DIR$/s_dispatcher/s_dispatcher.iml" group="mekongk1/s_dispatcher" />
+      <module fileurl="file://$PROJECT_DIR$/s_staticsfunc/s_staticsfunc.iml" filepath="$PROJECT_DIR$/s_staticsfunc/s_staticsfunc.iml" group="mekongk1/s_staticsfunc" />
+      <module fileurl="file://$PROJECT_DIR$/s_staticsview/s_staticsview.iml" filepath="$PROJECT_DIR$/s_staticsview/s_staticsview.iml" group="mekongk1/s_staticsview" />
+      <module fileurl="file://$PROJECT_DIR$/s_timepicker/s_timepicker.iml" filepath="$PROJECT_DIR$/s_timepicker/s_timepicker.iml" group="mekongk1/s_timepicker" />
+    </modules>
+  </component>
+</project>

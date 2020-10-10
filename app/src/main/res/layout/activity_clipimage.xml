@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:righttxt="使用"
+        androidme:text="更改头像"
+        />
+
+    <com.mani.car.mekongk1.ui.personcenter.personinformation.cutpic.ClipImageLayout
+        android:id="@+id/id_clipImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titile"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+    <LinearLayout
+        android:id="@+id/fenge_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/fenge_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titile"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

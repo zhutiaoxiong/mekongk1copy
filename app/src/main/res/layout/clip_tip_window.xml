@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_tips"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/normal_txt_color_white"
+        android:background="@color/normal_bg_color_tip_red"
+        android:gravity="center_vertical"
+        android:text="123456"
+        />
+
+</RelativeLayout>

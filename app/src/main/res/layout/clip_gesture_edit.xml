@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:androidme="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/normal_bg_color_big_white">
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:text="设置手势密码"/>
+    <LinearLayout
+        android:id="@+id/gesture_tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_head"
+        android:orientation="vertical"
+        >
+
+        <com.kulala.staticsview.image.CircleImg
+            android:id="@+id/user_logo"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="39dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/headpic_nomal" />
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:gravity="center_horizontal"
+            android:text="152****8888"
+            android:textSize="@dimen/sp_19"
+            android:textColor="@color/normal_txt_color_black" />
+
+        <TextView
+            android:id="@+id/text_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_22"
+            android:gravity="center_horizontal"
+            android:textColor="@color/normal_txt_color_black"
+            android:textSize="@dimen/sp_19"
+            />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/gesture_tip_layout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/title_head"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+       <!--<mekongk11.ui.gusturepassword.guestureview.LockIndicator-->
+            <!--android:id="@+id/lock_indicator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_tip"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dip"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="绘制解锁图案"-->
+            <!--android:textColor="#F98F12"/>-->
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gesture_tip_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_cancel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:text="取消"-->
+        <!--android:textSize="16dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/text_reset"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="设置两次相同密码"-->
+        <!--android:textColor="#816E6A"-->
+        <!--android:layout_below="@+id/gesture_container"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>

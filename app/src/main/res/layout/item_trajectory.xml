@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="91dp"
+    android:id="@+id/re"
+    >
+<View
+    android:layout_width="match_parent"
+    android:layout_height="91dp"
+    android:background="@drawable/item_trajectory_bg"/>
+    <LinearLayout
+        android:id="@+id/li_start"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/green_point"
+            />
+        <TextView
+            android:id="@+id/txt_start_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:textSize="14sp"
+            android:textColor="@color/normal_txt_color_white"
+            android:singleLine="true"
+            android:text="9:00 | 东莞市横沥镇南环路鑫永盛D7栋"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/li_end"
+        android:layout_below="@+id/li_start"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/car_logo"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/red_point"
+            />
+        <TextView
+            android:id="@+id/txt_end_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:textSize="14sp"
+            android:textColor="@color/normal_txt_color_white"
+            android:singleLine="true"
+            android:text="9:20 | 东莞市横沥镇南环路鑫永盛D7栋"/>
+    </LinearLayout>
+<View
+    android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/li_end"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:background="@color/normal_txt_color_white"/>
+    <TextView
+        android:id="@+id/txt_mileage"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginLeft="36dp"
+        android:textSize="14sp"
+        android:textColor="@color/normal_txt_color_white"
+        android:text="里程:8.8公里"/>
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginLeft="104dp"
+        android:layout_toRightOf="@+id/txt_mileage"
+        android:textSize="14sp"
+        android:textColor="@color/normal_txt_color_white"
+        android:text="耗时:10分钟"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

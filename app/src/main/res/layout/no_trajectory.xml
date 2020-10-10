@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="91dp"
+    >
+    <TextView
+        android:id="@+id/txt_no_trajectory"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/normal_txt_color_white"
+        android:background="@drawable/item_trajectory_bg"
+        android:text="当天无行车记录"/>
+</RelativeLayout>

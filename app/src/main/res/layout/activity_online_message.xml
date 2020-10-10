@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:text="在线留言" />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="您的姓名 |"
+        androidme:text="例：叶先生"
+        androidme:splitLine="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="联系方式 |"
+        androidme:text="例：13888888888"
+        androidme:splitLine="true"
+        />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="所在城市 |"
+        androidme:text="例：广东深圳"
+        androidme:splitLine="true"
+        />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="车辆品牌 |"
+        androidme:text="例：奥迪"
+        androidme:splitLine="true"
+        />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="品牌系列 |"
+        androidme:text="例：奥迪A6"
+        androidme:splitLine="true"
+        />
+    <com.kulala.staticsview.style.LeftTextRightEdit
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:lefttxt="上市时间 |"
+        androidme:text="例：2018年3月"
+        androidme:splitLine="true"
+        />
+   </LinearLayout>
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/button_selector_rect"
+        android:gravity="center"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:enabled="false"
+        android:text="提交留言"/>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:androidme="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/normal_bg_color_big_white"
+              android:orientation="vertical"
+              tools:ignore="HardcodedText,ContentDescription">
+
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="公司简介"
+        androidme:leftres="@drawable/selector_back_press"
+        />
+
+    <RelativeLayout
+        android:id="@+id/linlin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/web_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        androidme:text="更改昵称"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:righttxt="保存"
+        />
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center_vertical"
+        android:text="么控K1"
+        android:hint="请输入新昵称"
+        android:inputType="text"
+        android:textColor="@color/normal_txt_color_black"
+        android:textSize="16sp"
+        android:maxLength="10"
+        android:layout_marginTop="@dimen/dp_26"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/normal_screen_bg_color"
+        />
+</LinearLayout>

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+android {
+
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.mani.car.mekongk1"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "XEIiu70IqP6oSQunsXkB1A",
+                GETUI_APP_KEY   : "4EnjM4Cx4nAiFekrRe86w1",
+                GETUI_APP_SECRET: "p64U9TUlmc6Ui3idXawFG9"
+        ]
+    }
+    /** 数据签名配置: 使用本模块(app)下的debug.keystore*/
+    signingConfigs {
+        release {
+            storeFile file("../androidJava_key.jks")
+            storePassword "lancelot"
+            keyAlias "kelvin"
+            keyPassword "lancelot"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        qq {}
+        baidu {}
+        huawei {}
+        _360 {}
+        officcal {}
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'assets/location_map_gps_locked.png'
+        exclude 'assets/location_map_gps_3d.png'
+    }
+    dependencies {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //    //集成mvp
+    implementation 'com.hannesdorfmann.mosby:mvp:2.0.1'
+    //注解找id
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    api 'asia.ivity.android:drag-sort-listview:1.0'
+    //七牛sdk
+    implementation files('libs/qiniu-android-sdk-7.2.0.jar')
+    //happy dns for 七牛
+    implementation files('libs/happy-dns-0.2.3.2.jar')
+    //glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation files('libs/org.apache.http.legacy.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation project(':gaodemap')
+    implementation project(':links')
+    implementation project(':s_staticsview')
+    implementation project(':s_staticsfunc')
+    implementation project(':s_timepicker')
+    implementation project(':s_dispatcher')
+    implementation 'com.foamtrace:photopicker:1.0'
+    implementation 'id.zelory:compressor:2.1.0'
+    //图片压缩库
+    implementation files('libs/libammsdk.jar')
+    implementation files('libs/mta-sdk-1.6.2.jar')
+    implementation files('libs/open_sdk_r5785.jar')
+    implementation files('libs/alipaySdk-20160223.jar')
+}

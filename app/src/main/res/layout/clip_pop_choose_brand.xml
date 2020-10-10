@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color_big_white"
+    tools:ignore="ContentDescription,HardcodedText">
+
+   <com.mani.car.mekongk1.ClipTitleHead
+        android:id="@+id/title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        androidme:leftres="@drawable/selector_back_press"
+        androidme:text="title" />
+
+
+    <!--android:divider="@android:color/transparent"-->
+
+    <ListView
+        android:id="@+id/letter_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_head"
+        android:divider="@color/normal_bg_color_big_white"
+        android:dividerHeight="1dp"/>
+    <ListView
+        android:id="@+id/letter_list_letter"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_head"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <TextView
+        android:id="@+id/txt_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:maxWidth="70dip"
+        android:minWidth="70dip"
+        android:padding="10dip"
+        android:textColor="@android:color/black"
+        android:textSize="50dp" />
+
+</RelativeLayout>
